@@ -1,31 +1,32 @@
-@mixin font-shri{
+@mixin font-shri {
     font-family: shrikhand;
     font-weight: 400;
     text-align: center;
 }
 
-@mixin button-pink{
-        background-image: linear-gradient(to top, $primary-color, $secondary-color);
-        box-shadow: 0px 4px 16px rgba(0,0,0,0.30);
-        color: white;
+@mixin button-pink {
+    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 16px;
     height: 50px;
-        border: none;
-        border-radius: 25px;
-        padding: 1em;
-        margin-top: 1.5em;
-        margin-bottom: 3em;
-        opacity: 1;
-        transition: opacity 250ms, transform 250ms ease-in-out;
-            &:hover {
-                box-shadow: 0px 4px 16px rgba(0,0,0,40);
-                opacity: 0.85;
-                transition: all 250ms ease-in-out;
-                transform: scale(1.05);
-                cursor: pointer;
-            }
+    border: none;
+    border-radius: 25px;
+    padding: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+    opacity: 1;
+    transition: opacity 250ms, transform 250ms ease-in-out;
+    width: 20em;
+
+    &:hover {
+        opacity: 0.85;
+        cursor: pointer;
     }
-    @mixin ellipse {
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-    }
+}
+
+@mixin ellipse {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
